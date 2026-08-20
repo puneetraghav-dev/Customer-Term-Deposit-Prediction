@@ -145,18 +145,6 @@ No setup needed — try it directly at:
 
 ---
 
-## Business Scenario Notes
-
-1. **Use of predictions:** Score the full customer base, rank by predicted probability,
-   and prioritize the tele-calling team's limited time toward the highest-probability
-   customers.
-2. **Optimization target:** Not raw accuracy (misleading under ~88/12 class imbalance).
-   The model balances precision and recall (F1 / ROC-AUC), leaning toward recall since a
-   missed subscriber is costlier than one extra wasted call.
-3. **False positive vs. false negative impact:** A false positive costs one unnecessary
-   call; a false negative is a missed sale — the latter is more costly in this context.
-4. **Recommended model:** Random Forest (see above).
-
 ## License
 
 Released under the [MIT License](./LICENSE).
